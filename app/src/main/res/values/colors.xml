@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_login">#2ce6d3</color>
+    <color name="colorPrimaryDark_login">#2ce6d3</color>
+    <color name="windowBackground_login">#2ce6d3</color>
+    <color name="colorPrimary">#02d1d9</color>
+    <color name="colorPrimaryDark">#02d1d9</color>
+    <color name="windowBackground">#02d1d9</color>
+    <color name="colorAccent">#38dbdc</color>
+    <color name="bg"> #3bd9de</color>
+    <color name="txtColorWhite"> #FFFFFF</color>
+    <color name="bgColorWhite"> #FFFFFF</color>
+    <color name="txtRed"> #FF0000</color>
+    <color name="txtPink"> #FF1C74</color>
+    <color name="txtGray"> #E2E2E2</color>
+    <color name="txtBlack"> #000000</color>
+    <color name="lightPink">#f97dad</color>
+    <color name="macaronGreenColor">#02d1d9</color>
+    <color name="bgColor_CDF6F7">#CDF6F7</color>
+    <color name="bgEditColor">#ff1c74</color>
+    <color name="chauffeurWhite">#FFFFFF</color>
+    <color name="color7D7D7D">#7d7d7d</color>
+</resources>

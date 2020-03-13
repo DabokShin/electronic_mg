@@ -1,0 +1,40 @@
+{
+  "screen": {
+    "SplashActivity": "스플래쉬",
+    "LoginActivity": "로그인",
+    "DriveHistoryDetailActivity": "운행상세내역화면",
+    "AllocDetailActivity": "예약상세화면",
+    "AllocSelectActivity": "배차대기화면",
+    "DriveScheduleActivity": "예약목록화면",
+
+    "MainWorkFragment": "출근 대기 화면",
+    "DrivingFragment": "홈화면",
+    "BreakTimeFragment": "휴식화면",
+    "MoveGarageFragment": "차고지화면",
+    "ChauffeurEvalFragment": "좋아요,싫어요 리스트화면",
+    "DriveScheduleFragment":"예약목록화면",
+    "DriveHistoryFragment": "운행이력화면",
+    "NearByDriveFragment": "운행임박화면",
+    "OrgArrivedFragment": "출발지도착화면",
+    "CustomerLoadFragment": "고객탑승화면",
+    "DestArrivedFragment": "운행완료화면",
+    "InputPayFragment": "요금입력화면",
+    "OnLinePayCompleteFragment": "결제완료화면",
+    "OnlinePayFailedFragment": "결제실패화면",
+    "OffLinePayFragment": "직접결제화면",
+    "DestSearchingFragment": "일반운행화면",
+    "RoadsaleStartFragment": "일반운행 목적지화면",
+    "RoadsaleCompleteFragment": "일반운행 운행종료화면",
+    "StatisticsFragment": "운행통계화면",
+    "WebViewFragment": "웹뷰화면",
+
+    "AppAccessright": "기본 정보 등록",
+    "SignupBasicInfomation": "기본 정보 등록",
+    "SignupRequestInformation": "가입 신청/승인 화면",
+    "SignupFailInformation": "승인 불가 안내 화면",
+    "SignupAdditionalInformation": "부가 정보 입력 화면",
+    "SignupPictureRegistration": "사진/자격 정보 등록 화면"
+
+  }
+}
+

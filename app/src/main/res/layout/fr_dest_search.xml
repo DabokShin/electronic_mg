@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="#fafafa">
+
+            <include
+                android:id="@+id/title"
+                layout="@layout/macaron_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSearchHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.3dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="@string/txt_text_input_search"
+                    android:textColor="#656565"
+                    android:textSize="17.7sp"
+                    android:letterSpacing="-0.01"/>
+
+                <RelativeLayout
+                    android:id="@+id/searchInputBoxText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8.3dp"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/editDestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/roadsale_search_box"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:letterSpacing="-0.01"
+                        android:lineSpacingExtra="0sp"
+                        android:hint="@string/destination_input_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="20.7dp"
+                        android:textColor="#222222"
+                        android:textColorHint="#cccccc"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        tools:text="서울역" />
+
+                    <FrameLayout
+                        android:id="@+id/btnDestinationCancel"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_591_copy_2"
+                            android:clickable="false"/>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <!-- 음성입력으로 검색시 검색어 박스 -->
+                <RelativeLayout
+                    android:id="@+id/searchInputBoxVoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8.3dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/editDestinationVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/roadsale_btn_box"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:letterSpacing="-0.01"
+                        android:lineSpacingExtra="0sp"
+                        android:hint="@string/destination_input_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="75dp"
+                        android:textColor="@color/txtColorWhite"
+                        android:textColorHint="#cccccc"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        tools:text="서울역" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/sound_wave_6"/>
+
+                    <ImageButton
+                        android:id="@+id/btnDestinationCancelVoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="34dp"
+                        android:background="@drawable/close_1"/>
+                </RelativeLayout>
+
+                ㅊ
+
+                <TextView
+                    android:id="@+id/tvSearchVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.3dp"
+                    android:layout_marginStart="22dp"
+                    android:text="@string/txt_voice_input_search"
+                    android:textColor="#656565"
+                    android:textSize="17.7sp"
+                    android:letterSpacing="-0.01"/>
+
+                <RelativeLayout
+                    android:id="@+id/btnVoiceBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp">
+
+                    <ImageButton
+                        android:id="@+id/btnDestinationVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/roadsale_btn_box"
+                        android:gravity="center_horizontal"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="음성입력"
+                        android:textSize="25sp"
+                        android:textColor="@color/txtColorWhite"
+                        android:letterSpacing="-0.01"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 음성입력 팝업 -->
+        <RelativeLayout
+            android:id="@+id/popupDestinationVoice"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnDestinationVoiceCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20.7dp"
+                android:layout_marginEnd="20.7dp"
+                android:background="@drawable/bt_x"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="79dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="194.3dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="고객의 목적지를\n말해주세요."/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 음성입력 실패시 팝업 -->
+        <RelativeLayout
+            android:id="@+id/popupDestinationVoiceRetry"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnDestinationVoiceCancelRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20.7dp"
+                android:layout_marginEnd="20.7dp"
+                android:background="@drawable/bt_x"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/btnDestinationVoiceRetry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="46dp"
+                    android:background="@drawable/circle_black"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="76.7dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/refresh_2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="194.3dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="버튼을 누르고\n다시 한번 말해주세요."/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

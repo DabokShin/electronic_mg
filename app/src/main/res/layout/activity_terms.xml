@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/macaron_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fafafa">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/view_terms_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginLeft="21dp"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <TextView
+                        android:id="@+id/textview_all_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"
+                        android:textColor="#222222"
+                        android:letterSpacing="-0.01"
+                        android:textStyle="bold"
+                        android:text="@string/terms_agree_all"
+                        tools:text="아래 내용에 모두 동의합니다."/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:background="#eaeaea">
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_private"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:tag="0">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_private"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_allocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_allocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:tag="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_allocation"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:tag="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_pay"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:tag="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_location_service"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_chauffeur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_chauffeur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:tag="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_chauffeur_service"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_current"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="21dp"
+                        android:background="@drawable/checkbox_custom"
+                        android:button="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_terms_current"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:tag="5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"
+                            android:textColor="#222222"
+                            android:letterSpacing="-0.01"
+                            android:lineSpacingExtra="8dp"
+                            android:text="@string/terms_agree_location_current"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:background="@drawable/ic_right_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:background="#eaeaea">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="29dp"
+                    android:textSize="16dp"
+                    android:textColor="#a5a5a5"
+                    android:letterSpacing="-0.01"
+                    android:text="@string/terms_agree_location_desc"
+                    tools:text="* 필수 약관 동의 후 서비스 이용이 가능합니다." />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textview_terms_next"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:enabled="false"
+            android:background="@drawable/btn_bottom_new_selector"
+            android:text="@string/terms_agree"/>
+
+    </LinearLayout>
+
+</layout>

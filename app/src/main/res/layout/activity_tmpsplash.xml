@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splash01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/sp_desc"
+            android:visibility="invisible"
+            android:src="@drawable/macaron_app_icon" />
+
+        <ImageView
+            android:id="@+id/splash02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16.7dp"
+            android:visibility="invisible"
+            android:contentDescription="@string/sp_desc"
+            android:src="@drawable/splash_logo" />
+
+        <ImageView
+            android:id="@+id/splash03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16.7dp"
+            android:visibility="invisible"
+            android:src="@drawable/splash_invalid_name"
+            />
+
+    </LinearLayout>
+</layout>

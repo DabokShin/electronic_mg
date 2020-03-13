@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#007a82"
+    tools:targetApi="lollipop">
+    <item>
+        <!--
+            Item 하위에 Drawable를 추가할 수 있습니다.
+            이는 버튼의 배경이 됩니다.
+        -->
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="13.3dp"
+                android:bottomRightRadius="13.3dp"/>
+            <solid android:color="#00cad2"/>
+        </shape>
+    </item>
+</ripple>

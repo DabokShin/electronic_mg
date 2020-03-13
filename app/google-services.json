@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "963575216542",
+    "firebase_url": "https://macaron-7a919.firebaseio.com",
+    "project_id": "macaron-7a919",
+    "storage_bucket": "macaron-7a919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963575216542:android:7c964a42c35fa43b",
+        "android_client_info": {
+          "package_name": "kst.ksti.chauffeur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963575216542-q58fb7hjo04q8vr15j9fb8bu6gomd27v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfHW6N3J2eTcQRRzOAjtb8FivFIDGSZgc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963575216542:android:8d04a2d4c618a3fc",
+        "android_client_info": {
+          "package_name": "kst.macaron.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963575216542-q58fb7hjo04q8vr15j9fb8bu6gomd27v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfHW6N3J2eTcQRRzOAjtb8FivFIDGSZgc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

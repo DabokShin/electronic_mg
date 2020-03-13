@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_white_popup">
+
+            <ImageButton
+                android:id="@+id/btn_dlg_close"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dlg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="41dp"
+                    android:gravity="center"
+                    android:textColor="#1e1e1e"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="자격증명 등록방법" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e9e9e9"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29.7dp"
+                    android:layout_marginBottom="27.3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1e1e1e"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="택시 운전 자격증명을 등록해주세요." />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27.7dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/background_photo_alert">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="23.7dp"
+                            android:textColor="#a5a5a5"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="[ 사진안내 ]"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17.3dp"
+                            android:layout_marginBottom="24.3dp"
+                            android:textColor="#555555"
+                            android:textSize="17.3dp"
+                            android:gravity="center"
+                            android:text="- 운전면허증은 불가합니다.\n- 택시운전자격증은 불가합니다.\n- 사진 내 자격증 변호가 필요합니다.\n- 개인택시의 경우 사진 내 차량번호가\n필요합니다." />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24.7dp"
+                        android:textColor="#a5a5a5"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:text="* 상기 조건을 꼭 확인하시고 등록 바랍니다." />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSingle"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ripple_single_round_true_effect"
+                    android:textColor="#fafafa"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="확인"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

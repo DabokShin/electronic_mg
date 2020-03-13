@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/g01" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schedule_list"
+            android:icon="@drawable/left_resv"
+            android:title="예약목록" />
+        <!--운행이력-->
+    </group>
+
+    <group android:id="@+id/g02" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accident_reg"
+            android:icon="@drawable/emergecy"
+            android:title="사고접수" />
+    </group>
+
+</menu>

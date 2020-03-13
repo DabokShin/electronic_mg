@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/schedule_box_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/titleBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/schedule_num"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/small_white_box"
+                android:gravity="center"
+                android:textColor="@color/txtBlack"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                tools:text="오늘" />
+
+            <TextView
+                android:id="@+id/schedule_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/schedule_num"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtColorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="01/25/금   13:20" />
+
+            <TextView
+                android:id="@+id/before_schedule_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:gravity="center_vertical"
+                android:textColor="#fffc00"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="02:20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 마크 이미지 -->
+            <RelativeLayout
+                android:id="@+id/imgMark"
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_tmp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="15.3dp"
+                        android:layout_height="15.3dp"
+                        android:src="@drawable/vector_smart_object_copy_2" />
+
+                    <ImageView
+                        android:layout_width="2.3dp"
+                        android:layout_height="2.3dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ellipse_2_1" />
+
+                    <ImageView
+                        android:layout_width="2.3dp"
+                        android:layout_height="2.3dp"
+                        android:layout_marginTop="7.8dp"
+                        android:src="@drawable/ellipse_2_1" />
+
+                    <ImageView
+                        android:layout_width="2.3dp"
+                        android:layout_height="2.3dp"
+                        android:layout_marginTop="7.8dp"
+                        android:src="@drawable/ellipse_2_1" />
+
+                    <ImageView
+                        android:layout_width="2.3dp"
+                        android:layout_height="2.3dp"
+                        android:layout_marginTop="7.8dp"
+                        android:src="@drawable/ellipse_2_1" />
+
+                    <ImageView
+                        android:layout_width="2.3dp"
+                        android:layout_height="2.3dp"
+                        android:layout_marginTop="7.8dp"
+                        android:src="@drawable/ellipse_2_1" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="16.7dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/arrival_mark" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgMark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orgPoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="#222222"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        tools:text="출발지 POI" />
+
+                    <TextView
+                        android:id="@+id/oriAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="#a5a5a5"
+                        android:textSize="17sp"
+                        tools:text="출발지 주소" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/shape_1_copy" />
+
+                    <TextView
+                        android:id="@+id/resvPoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="#222222"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        tools:text="도착지 POI" />
+
+                    <TextView
+                        android:id="@+id/resvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="#a5a5a5"
+                        android:textSize="17sp"
+                        tools:text="도착지 주소" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

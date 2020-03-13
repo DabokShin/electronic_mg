@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/macaron_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mainWorkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp">
+
+            <ImageView
+                android:id="@+id/imgWorkProfile"
+                android:layout_width="100.3dp"
+                android:layout_height="100.3dp"
+                android:src="@drawable/photo_default"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWorkName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:textColor="#02d1d9"
+                android:textSize="29.2dp"
+                android:textStyle="bold"
+                android:text=" "
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_tmp1"
+                app:layout_constraintTop_toBottomOf="@+id/imgWorkProfile"
+                tools:text="마학동" />
+
+            <TextView
+                android:id="@+id/tv_tmp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:text="기사님"
+                android:textColor="#222222"
+                android:textSize="29.2dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/tvWorkName"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgWorkProfile" />
+
+            <TextView
+                android:id="@+id/tv_tmp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.3dp"
+                android:text="오늘도 즐거운 운행하세요!"
+                android:textColor="#222222"
+                android:textSize="29.2dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWorkName" />
+
+            <EditText
+                android:id="@+id/tvCarNo"
+                android:layout_width="226.7dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35.7dp"
+                android:background="@drawable/background_evaluate_work"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:textSize="29dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:hint="차량번호를 입력해 주세요."
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tmp3"
+                tools:text="21허1118" />
+
+            <Button
+                android:id="@+id/btnCarChange"
+                android:layout_width="226.7dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4.3dp"
+                android:background="@drawable/background_evaluate_good"
+                android:text="차량 변경하기"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCarNo" />
+
+            <ImageView
+                android:layout_width="155.7dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="36.3dp"
+                android:src="@drawable/z_garage"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCarChange" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79.7dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnStartWork"
+                android:layout_width="match_parent"
+                android:layout_height="79.7dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_true_effect"
+                android:text="출근하기"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

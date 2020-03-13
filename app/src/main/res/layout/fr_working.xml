@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/macaron_title_drivingfragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 차고지 이동 버튼 -->
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/btnMoveToGarage"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ico_garage"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- TTS 버튼 -->
+        <RelativeLayout
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+            <CheckBox
+                android:id="@+id/btnFloating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@xml/btn_option_floating"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/btnTTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnFloating"
+                android:layout_marginStart="10dp"
+                android:button="@xml/cb_tts"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fafafa"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/unuseAttemptedCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_total_unuseAttemptedCount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#222222"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="배달목록 총 0개"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/useAttemptedCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/total_useAttemptedCount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#222222"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="배달목록 총 0개"
+                            android:layout_weight="3"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#222222"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text=" | "
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/tvfailTotal_useAttemptedCount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="미운행 2개"
+                            android:gravity="left"
+                            android:textColor="@color/txtRed"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_weight="3"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_drive_schedule"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="23.7dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scrollbarFadeDuration="0"
+                        android:scrollbarSize="5dp"
+                        android:scrollbarThumbVertical="@android:color/darker_gray"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomGroup"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btnRest"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_gray_effect"
+                    android:gravity="center"
+                    android:text="@string/txt_breaktime"
+                    android:textColor="@android:color/white"
+                    android:textSize="23dp" />
+
+                <Button
+                    android:id="@+id/btnRoadsale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_true_effect"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="일반운행 시작"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"/>
+
+                <Button
+                    android:id="@+id/btnMoveToGarage2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_true_effect"
+                    android:gravity="center"
+                    android:text="차고지 이동"
+                    android:textColor="@android:color/white"
+                    android:textSize="23dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

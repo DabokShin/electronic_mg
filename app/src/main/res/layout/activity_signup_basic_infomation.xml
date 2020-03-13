@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title"
+                layout="@layout/macaron_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clipChildren="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bgColorWhite"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.7dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <RadioButton
+                                    android:id="@+id/rbIndividual"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:button="@drawable/radio_button_company_type"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="4dp"
+                                    android:text="개인"
+                                    android:textColor="#222222"
+                                    android:textSize="17.7sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <RadioButton
+                                    android:id="@+id/rbCompany"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:button="@drawable/radio_button_company_type"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:paddingLeft="10dp"
+                                    android:paddingBottom="4dp"
+                                    android:text="법인"
+                                    android:textColor="#222222"
+                                    android:textSize="17.7sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <!-- 기본 -->
+                    <LinearLayout
+                        android:id="@+id/normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/base_copy"
+                            android:gravity="center_vertical"
+                            android:text="* 개인택시 : 개인 선택\n* 법인택시 : 법인 선택"
+                            android:textColor="#a5a5a5"
+                            android:textColorHint="#a0a0a0"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!-- 개인 -->
+                    <LinearLayout
+                        android:id="@+id/individual"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16.3dp">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar1"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/registrationNumber"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar1"
+                                android:letterSpacing="-0.01"
+                                android:text="사업자등록번호"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etRegistrationNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="22dp"
+                                android:layout_toRightOf="@id/registrationNumber"
+                                android:background="@drawable/base_copy"
+                                android:hint="@string/registration_number_hint"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLength="12"
+                                android:maxLines="1"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/btn_exist_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="21dp"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:textSize="14dp"
+                                android:textColor="#222222"
+                                android:letterSpacing="-0.01"
+                                android:gravity="center"
+                                android:background="@drawable/btn_small_round_selector"
+                                android:text="@string/corporation_register_corporation_number_check"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/bgColorWhite">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar2"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar2"
+                                android:letterSpacing="-0.01"
+                                android:text="이름"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_toRightOf="@id/name"
+                                android:background="@drawable/base_copy"
+                                android:hint="@string/name_hint"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/bgColorWhite">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar3"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/birthday"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar3"
+                                android:letterSpacing="-0.01"
+                                android:text="생년월일"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvBirthday"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@id/birthday"
+                                android:gravity="center_vertical"
+                                android:hint="생년월일을 입력하세요."
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bgColorWhite"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/bgColorWhite"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivPinkStar5"
+                                    android:layout_width="9dp"
+                                    android:layout_height="8.3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="21.3dp"
+                                    android:background="@drawable/ico_pink_star" />
+
+                                <TextView
+                                    android:id="@+id/businessDistrict"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_toRightOf="@id/ivPinkStar5"
+                                    android:letterSpacing="-0.01"
+                                    android:text="영업지역"
+                                    android:textColor="#656565"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgColorWhite"
+                                android:gravity="center_horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_select_area"
+                                    android:text=""
+                                    android:hint="전국시도"
+                                    android:textSize="17.7sp" />
+
+                                <Button
+                                    android:id="@+id/btn_dong"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/btn_select_area"
+                                    android:text=""
+                                    android:hint="시/군"
+                                    android:textSize="17.7sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bgColorWhite"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/bgColorWhite"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivPinkStar6"
+                                    android:layout_width="9dp"
+                                    android:layout_height="8.3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="21.3dp"
+                                    android:background="@drawable/ico_pink_star" />
+
+                                <TextView
+                                    android:id="@+id/joinCourse"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_toRightOf="@id/ivPinkStar6"
+                                    android:letterSpacing="-0.01"
+                                    android:text="가입 경로"
+                                    android:textColor="#656565"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/etJoinCourse"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="30dp"
+                                android:background="@drawable/base_copy"
+                                android:hint="@string/join_course_hint"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@drawable/line" />
+
+                            <TextView
+                                android:id="@+id/tvJoinCourseInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="14dp"
+                                android:layout_marginTop="20dp"
+                                android:text="※ 해당되는 가입경로를 정확히 입력해주세요."
+                                android:textColor="#a5a5a5"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 법인 -->
+                    <LinearLayout
+                        android:id="@+id/company"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16.3dp">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar11"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/companyName"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar11"
+                                android:letterSpacing="-0.01"
+                                android:text="소속"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etCompanyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_toRightOf="@id/companyName"
+                                android:background="@drawable/base_copy"
+                                android:hint="@string/company_input_hint"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/btnCompanySearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="21dp"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:textSize="14dp"
+                                android:textColor="#222222"
+                                android:letterSpacing="-0.01"
+                                android:gravity="center"
+                                android:background="@drawable/btn_small_round_selector"
+                                android:text="@string/signup_basic_information_company_search"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bgColorWhite">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar12"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/name2"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar12"
+                                android:letterSpacing="-0.01"
+                                android:text="이름"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etName2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_toRightOf="@id/name2"
+                                android:background="@drawable/base_copy"
+                                android:hint="@string/name_hint"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bgColorWhite">
+
+                            <ImageView
+                                android:id="@+id/ivPinkStar13"
+                                android:layout_width="9dp"
+                                android:layout_height="8.3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="21.3dp"
+                                android:background="@drawable/ico_pink_star" />
+
+                            <TextView
+                                android:id="@+id/birthday2"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="14dp"
+                                android:layout_toRightOf="@id/ivPinkStar13"
+                                android:letterSpacing="-0.01"
+                                android:text="생년월일"
+                                android:textColor="#656565"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvBirthday2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_toRightOf="@id/birthday2"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:textColor="#222222"
+                                android:textColorHint="#a0a0a0"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:hint="생년월일을 입력하세요."/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/line" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/tlReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:visibility="gone">
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#b7b7b7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:letterSpacing="-0.01"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_gray_effect"
+                        android:text="@string/txt_cancel"/>
+
+                    <TextView
+                        android:id="@+id/btn_request"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:letterSpacing="-0.01"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:background="@drawable/btn_bottom_new_selector"
+                        android:text="@string/signup_basic_information"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 로딩바 -->
+        <RelativeLayout
+            android:id="@+id/loadingBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:progressBackgroundTint="#02d1d9"
+                android:progressTint="#02d1d9" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

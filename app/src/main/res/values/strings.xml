@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">macaron go Driver</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="data_receive_fail">서버와의 연결에 실패하였습니다.</string>
+
+    <string name="sp_desc">Description</string>
+    <string name="login_greeting">배달기사님 \n안녕하세요!</string>
+    <string name="id_hint">아이디를 입력해 주세요.</string>
+    <string name="phone_hint">휴대폰번호를 입력해 주세요.</string>
+    <string name="car_no_hint">차량번호를 입력해 주세요.</string>
+    <string name="pw_hinjt">비밀번호를 입력해 주세요.</string>
+    <string name="pw_forget">비밀번호 잊어버리셨나요?</string>
+    <string name="main_f_title">배달기사</string>
+    <string name="txt_breaktime">휴식</string>
+    <string name="txt_breaktime_title">휴식중</string>
+    <string name="txt_driving">배달하기</string>
+    <string name="txt_delivery">배달</string>
+    <string name="txt_src_arr">도착 알림 보내기</string>
+    <string name="txt_move_to_garage">차고지 이동</string>
+    <string name="urgent_leave_work">긴급퇴근</string>
+    <string name="txt_leave_work">퇴근</string>
+    <string name="txt_currentschedule">예약 상세</string>
+    <string name="txt_neartodrive">배달임박</string>
+    <string name="txt_onboard">승객탑승 완료</string>
+    <string name="txt_not_onboard">미탑승</string>
+    <string name="txt_input_fare">요금입력</string>
+    <string name="direct_pay">직접 결제</string>
+    <string name="yes_receive_payment">받았습니다.</string>
+    <string name="str_request_directpay">요금을 직접 받아주세요.</string>
+    <string name="txt_request_payment">결제요청</string>
+    <string name="txt_request_payment_app">앱 결제요청</string>
+    <string name="txt_request_payment_offline">직접 결제요청</string>
+    <string name="txt_confirm">확인</string>
+    <string name="txt_yes">네</string>
+    <string name="txt_no">아니오</string>
+    <string name="txt_change">변경</string>
+    <string name="txt_cancel">취소</string>
+    <string name="txt_request_reconfirm">재승인 요청</string>
+    <string name="txt_drivecomplete">배달 완료</string>
+    <string name="txt_supply_need">준비 품목이 있습니다.</string>
+    <string name="txt_departure">출발지</string>
+    <string name="txt_destination">도착지</string>
+    <string name="sdk_name">데이터 요청 실패</string>
+    <string name="txt_servicelist_ready">메뉴를 확인하셨나요?</string>
+    <string name="txt_start">출발</string>
+    <string name="txt_unload">고객이 정말로\n탑승하지 않았습니까?</string>
+    <string name="txt_noti_cont">기사 위치를 확인합니다.</string>
+    <string name="txt_polling_cont">배달임박 체크를 합니다.</string>
+    <string name="txt_customer_direct1">고객이 기사님에게</string>
+    <string name="txt_customer_direct2">를 요청하였습니다.</string>
+    <string name="txt_directpay">직접결제</string>
+    <string name="txt_pay_accept">요금을 받았습니다</string>txt_taxi_toll
+    <string name="txt_schedule_remain">잔여예약이 남아잇습니다. 정말로 퇴근하시겟습니까?</string>
+    <string name="destination_input_hint">목적지 입력</string>
+    <string name="txt_text_input_search">텍스트로 검색</string>
+    <string name="txt_voice_input_search">음성으로 검색</string>
+    <string name="txt_taxi_toll">통행요금</string>
+    <string name="txt_unrun">미배달</string>
+    <string name="call_customer">고객에게 전화하기</string>
+
+    <string name="popup_retire">"차고지로 이동하시겠습니까?"</string>
+    <string name="am"><![CDATA[<font color="#ff1c74">오전 </font>]]></string>
+    <string name="pm"><![CDATA[<font color="#ff1c74">오후 </font>]]></string>
+
+    <!-- 신규 가입 -->
+    <string name="registration_number_hint">숫자만 입력</string>
+    <string name="name_hint">주민등록상 이름 기재</string>
+    <string name="birthday_hint">생일 8자리를 입력하세요.</string>
+    <string name="join_course_hint">가입경로를 입력하세요.</string>
+    <string name="join_course_info"><![CDATA[※ 해당되는 가입경로를 정확히 입력해주세요.<br>1. 대리점 추천인 경우 -> <font color="#02d1d9">대리점명</font> 입력<br>2. 홈페이지 광고를 본 경우 -> <font color="#02d1d9">홈페이지 광고</font> 입력<br>3. 배달기사의 추천인 경우 -> <font color="#02d1d9">지역</font>과 <font color="#02d1d9">쇼퍼 성함</font> 입력<br>4. 기타 경로 또는 지인 추천인 경우 -> <font color="#02d1d9">해당 내용</font> 입력<br>]]></string>
+    <string name="bank_hint">은행을 선택하세요.</string>
+    <string name="bank_number_hint">숫자만 입력하세요.</string>
+    <string name="bank_account">예금주를 입력하세요.</string>
+    <string name="make_company">제조사를 입력하세요.</string>
+    <string name="car_model_company_hint">제조사를 선택하세요.</string>
+    <string name="car_model_select_hint">차량 모델을 선택하세요.</string>
+    <string name="car_number_hint">차량번호 입력</string>
+    <string name="taxi_type">유형을 선택하세요.</string>
+    <string name="company_input_hint">2글자 이상 입력</string>
+
+    <!--Toast-->
+    <string name="toast_tmap_last_destination">마지막 리스트 입니다.</string>
+
+
+    <!--AlertDialog-->
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="default_alert_title">Macaron</string>
+    <string name="lost_pw">비밀번호 찾기</string>
+    <string name="btn_call">전화하기</string>
+    <string name="call_company">비밀번호를 찾기 위해서는\n회사로 직접 요청하셔야 합니다.\n연결하시겠습니까?</string>
+    <string name="emergency_call">긴급한 상황을\n본사로 알릴 수 있습니다.\n연결하시겠습니까?</string>
+    <string name="pls_direct">요금을 직접 받아주세요!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tmap_not_install">티맵 설치를 진행합니다.</string>
+
+    <string name="gps_error_message">GPS 오류가 발생 하였습니다.</string>
+
+    <!-- 알림 -->
+    <string name="notification_allocation">배차 알림</string>
+    <string name="notification_chauffeur_position">기사 위치 확인</string>
+
+    <!-- 알림 -->
+    <string name="app_access_right">앱 접근권한 안내</string>
+
+    <!-- 개발 관련 -->
+    <string name="begin_activity">LOG1## : 액티비티 시작</string>
+    <string name="begin_fragment">LOG1## : 프래그먼트 시작</string>
+
+    <!-- 로그인 -->
+    <string name="login_sign_up">기사 가입</string>
+    <string name="login_register_company">법인 등록</string>
+
+    <!-- 약관 동의 -->
+    <string name="terms_agree_title">서비스 약관 동의</string>
+    <string name="terms_agree_all">아래 내용에 <![CDATA[<font color="#38dbdc">모두 동의</font>]]> 합니다.</string>
+    <string name="terms_agree_private">(필수) 개인정보 수집 및 이용에 대한 동의</string>
+    <string name="terms_agree_allocation">(필수) 차량 배차를 위한 개인정보 3자 제공동의</string>
+    <string name="terms_agree_pay">(필수) 영수증 및 정산 처리를 위한 개인정보 제3자 제공동의</string>
+    <string name="terms_agree_location_service">(필수) 위치기반 서비스 이용 약관</string>
+    <string name="terms_agree_chauffeur_service">(필수) 영광무안 배달 서비스 이용약관</string>
+    <string name="terms_agree_location_current">(필수) 배차 시 현 위치 정보 제공 동의</string>
+    <string name="terms_agree_location_desc">* 필수 약관 동의 후 서비스 이용이 가능합니다.</string>
+    <string name="terms_agree">동의하기</string>
+
+    <!-- 휴대폰 인증 -->
+    <string name="phone_auth_title">휴대폰 번호인증</string>
+    <string name="phone_auth_summary">휴대전화번호를 입력해주세요.</string>
+    <string name="phone_auth_confirm_summary">인증번호 6자리를 입력해주세요.</string>
+    <string name="phone_auth_hint"><font size="18">‘-’ 없이 숫자만 입력</font></string>
+    <string name="phone_auth_send">인증번호 받기</string>
+    <string name="phone_auth_confirm">인증번호 확인</string>
+    <string name="phone_auth_retry">재요청</string>
+    <string name="phone_auth_time_out">시간초과</string>
+    <string name="phone_auth_send_complete">인증번호가 발송되었습니다.</string>
+
+    <!-- 법인 등록 -->
+    <string name="corporation_register_title">법인등록</string>
+    <string name="corporation_register_basic_section">기본정보</string>
+    <string name="corporation_register_corporation_name">법인명</string>
+    <string name="corporation_register_corporation_name_hint">법인명을 입력하세요.</string>
+    <string name="corporation_register_corporation_number">사업자번호</string>
+    <string name="corporation_register_number_hint">숫자만 입력하세요.</string>
+    <string name="corporation_register_corporation_number_check">중복체크</string>
+    <string name="corporation_register_corporation_phone_no">전화번호</string>
+    <string name="corporation_register_corporation_area">영업지역</string>
+    <string name="corporation_register_corporation_taxi_type">택시종류</string>
+    <string name="corporation_register_corporation_certificate_number">면허대수</string>
+    <string name="corporation_register_bank_name_hint">성명을 입력하세요.</string>
+    <string name="corporation_register_spinner_sido_hint">전국</string>
+    <string name="corporation_register_spinner_sido_title">전국 시도 선택</string>
+    <string name="corporation_register_spinner_gungu_hint">시/군</string>
+    <string name="corporation_register_spinner_gungu_title">시/군 선택</string>
+    <string name="corporation_register_spinner_taxi_hint">유형을 선택하세요.</string>
+    <string name="corporation_register_spinner_taxi_title">택시유형 선택</string>
+    <string name="corporation_register_spinner_bank_hint">은행을 선택하세요.</string>
+    <string name="corporation_register_spinner_bank_title">은행 선택</string>
+    <string name="corporation_register_auth">인증</string>
+    <string name="corporation_register_request">법인등록 신청</string>
+    <string name="corporation_register_inform1">* 입력한 정보가 실제 정보와 다를 경우 승인 보류됩니다.</string>
+    <string name="corporation_register_inform2">* 계좌 정보는 수익금 정산 목적으로 사용됩니다.</string>
+    <string name="corporation_register_exist_msg">등록(등록 중) 법인입니다.\n소속 법인 관리자에게 확인해주세요.</string>
+    <string name="corporation_register_available_msg">신규 등록 가능한 법인입니다.\n법인 관리자만 등록 신청해주세요.</string>
+    <string name="corporation_register_invalid_bank_msg">계좌번호가 정확하지 않습니다.\n다시 확인해주세요.</string>
+    <string name="corporation_register_valid_bank_msg">계좌인증이 완료되었습니다.</string>
+    <string name="corporation_register_bank_section">은행사</string>
+
+    <string name="corporation_register_possible">신규등록 가능한 법인입니다.\n법인 관리자만 등록 신청해주세요.</string>
+    <string name="corporation_register_sido_empty">시/도를 선택해주세요.</string>
+    <string name="corporation_register_not_allow_gungu">해당 지역은 전체만 선택 가능합니다.</string>
+    <string name="corporation_register_corporation_name_empty">법인명을 입력해주세요.</string>
+    <string name="corporation_register_bis_number_empty">사업자번호를 바르게 입력해주세요.</string>
+    <string name="corporation_register_bank_name_empty">은행사를 선택해주세요.</string>
+    <string name="corporation_register_bank_user_empty">예금주명을 입력해주세요.</string>
+    <string name="corporation_register_bank_number_empty">계좌번호를 입력해주세요.</string>
+
+    <!-- 쇼퍼 기본 등록 -->
+    <string name="signup_basic_information">다음</string>
+    <string name="signup_basic_information_possible">등록 가능한 사업자등록 번호입니다.</string>
+    <string name="signup_basic_information_company_search">조회</string>
+    <string name="signup_basic_information_company_name_empty">소속명을 입력해주세요.</string>
+    <string name="signup_basic_information_company_empty">회사가 없습니다.\n다시 검색 해주세요.</string>
+
+    <!-- 부가 정보 입력 -->
+    <string name="signup_basic_information_request">신청</string>
+    <string name="signup_additional_information_account_number_confirm">인증</string>
+    <string name="signup_additional_information_account_name_empty">예금주명을 입력해 주세요.</string>
+    <string name="signup_additional_information_account_number_empty">계좌번호를 입력해 주세요.</string>
+    <string name="signup_additional_information_possible">등록 가능한 계좌번호입니다.</string>
+    <string name="signup_additional_information_car_company_empty">차량 제조사를 선택해주세요.</string>
+
+    <!-- 쇼퍼 가입 승인/거절 -->
+    <string name="signup_complete_informaiton_company">법인 가입신청이\n완료되었습니다.</string>
+    <string name="signup_complete_informaiton_chauffeur">쇼퍼님의 가입신청이\n완료되었습니다.</string>
+    <string name="signup_complete_informaiton_success_company">법인 가입신청이\n승인되었습니다.</string>
+    <string name="signup_complete_informaiton_success">쇼퍼님의 가입신청이\n승인되었습니다.</string>
+    <string name="signup_complete_informaiton_inforjct_company">법인 가입신청이\n승인 보류되었습니다.</string>
+    <string name="signup_complete_informaiton_inforjct">쇼퍼님의 가입신청이\n승인 보류되었습니다.</string>
+    <string name="signup_complete_success_pw">- 비밀번호 : 휴대폰번호 뒷자리(숫자 4자리)</string>
+    <string name="signup_complete_fail">ⓘ 승인 보류사유</string>
+    <string name="signup_complete_reason_subtitle1">ⓘ</string>
+    <string name="signup_complete_reason_subtitle2">승인 보류사유</string>
+
+    <!-- 프로필 -->
+    <string name="profile_start_limit">* 출근 후 챠량 정보 확인이 가능합니다.</string>
+    <string name="profile_title">내 정보</string>
+    <string name="profile_title_modify">내 정보 수정</string>
+    <string name="profile_chauffeur_info_section">기사 정보</string>
+    <string name="profile_chauffeur_account">계정</string>
+    <string name="profile_chauffeur_password">비밀번호</string>
+    <string name="profile_chauffeur_password_hint">기존 비밀번호 입력</string>
+    <string name="profile_chauffeur_new_password">비밀번호 재입력</string>
+    <string name="profile_chauffeur_new_password_hint">새 비밀번호를 입력하세요.</string>
+    <string name="profile_chauffeur_new_password_confirm">비밀번호 재확인</string>
+    <string name="profile_chauffeur_new_password_confirm_hint">새 비밀번호를 재확인하세요.</string>
+    <string name="profile_chauffeur_phone">휴대폰번호</string>
+
+    <string name="profile_chauffeur_password_warning">* 비밀번호는 8~16자 영문 대ᆞ소문자, 숫자를 조합하여 설정.</string>
+
+    <string name="profile_legal_info_section">가맹점정보</string>
+    <string name="profile_legal_info_name">가맹점명</string>
+    <string name="profile_legal_info_number">전화번호</string>
+
+    <string name="profile_bank_info_section">계좌정보</string>
+    <string name="profile_bank_info_bank">은행</string>
+    <string name="profile_bank_info_number">계좌번호</string>
+    <string name="profile_bank_info_name">예금주명</string>
+
+    <string name="profile_car_info_section">차량정보</string>
+    <string name="profile_car_info_number">차량번호</string>
+    <string name="profile_car_info_type">택시유형</string>
+    <string name="profile_car_info_model">차량모델</string>
+    <string name="profile_car_info_corporate_warning">* 차량정보 변경은 고객센터로 문의바랍니다.</string>
+    <string name="profile_car_info_individual_warning">* 계좌 및 차량정보 변경은 고객센터로 문의바랍니다.</string>
+
+    <string name="profile_password_empty">기존 비밀번호를 입력해주세요.</string>
+    <string name="profile_password_not_match">기존 비밀번호가 일치하지 않습니다.</string>
+    <string name="profile_new_password_empty">새 비밀번호를 입력해주세요.</string>
+    <string name="profile_new_password_not_match">입력하신 새 비밀번호가 일치하지 않습니다. 다시 확인해 주세요.</string>
+    <string name="profile_password_warning">비밀번호는 4~16자 영문 대ᆞ소문자, 숫자를 조합하여 설정해주세요.</string>
+    <string name="profile_password_change_complete">비밀번호가 변경되었습니다.</string>
+    <string name="profile_chauffeur_info_modify">수정 확인</string>
+    <string name="htmlTest">해당 번호로 가입된 정보가 있습니다.\n로그인하시겠습니까?\n\n*가입한 적이 없는 경우\n고객센터(1811-7994)로 문의바랍니다.</string>
+
+    <string name="approval_contents">영업일 기준 <![CDATA[<font color="#f97dad">3일 이내</font><br>법인 정보 확인 후<br>담당자가 연락드릴 예정입니다.]]></string>
+    <string name="approval_contents_chauffeur">영업일 기준 <![CDATA[<font color="#f97dad">3일 이내</font><br>기사 정보 확인 후<br>담당자가 연락드릴 예정입니다.]]></string>
+
+    <!-- 사진/자격 정보 등록 -->
+    <string name="signup_picture_registration_title">사진/자격 정보 등록</string>
+    <string name="signup_picture_registration_face_picture_description">얼굴사진 등록을 위해\n우측 상단의 아이콘을 누르고\n도움말을 확인하세요!</string>
+    <string name="signup_picture_registration_license_picture_description">자격증명의 등록을 위해\n우측 상단의 아이콘을 누르고\n도움말을 확인하세요!</string>
+</resources>

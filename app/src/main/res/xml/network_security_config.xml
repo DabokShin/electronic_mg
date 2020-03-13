@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">t.chauffeur.macaront.com</domain>-->
+        <!--<domain includeSubdomains="true">t.file.macaront.com</domain>-->
+        <!--<domain includeSubdomains="true">t.tdcs.macaront.com</domain>-->
+        <!--<domain includeSubdomains="true">topkoctile.tmap.co.kr</domain>-->
+        <!--<domain includeSubdomains="true">topopentile1.tmap.co.kr</domain>-->
+    <!--</domain-config>-->
+</network-security-config>

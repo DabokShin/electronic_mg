@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <!-- 상단 백그라운드 이미지 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:background="@drawable/ellipse_669"
+                android:gravity="center_horizontal" />
+
+            <!--이름-->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19.3dp"
+                android:gravity="center"
+                android:letterSpacing="-0.01"
+                android:textColor="@color/txtColorWhite"
+                android:textSize="18.3dp"
+                android:textStyle="bold"
+                tools:text="마학동" />
+
+            <!--핸드폰번호-->
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42.7dp"
+                android:gravity="center"
+                android:letterSpacing="-0.01"
+                android:textColor="@color/txtColorWhite"
+                android:textSize="18.3dp"
+                android:textStyle="bold"
+                tools:text="010-1234-5678" />
+
+            <!--차량번호-->
+            <TextView
+                android:id="@+id/carNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="68dp"
+                android:gravity="center"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="19.5dp"
+                android:textColor="@color/txtColorWhite"
+                android:textSize="18.3dp"
+                android:textStyle="bold"
+                tools:text="33가 5678" />
+
+            <!-- 좋아요 싫어요 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135.7dp"
+                android:layout_marginTop="148dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+                <!--좋아요-->
+                <LinearLayout
+                    android:id="@+id/cover_like"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_white_effect"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_like"
+                        android:layout_width="33.3dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/like" />
+
+                    <TextView
+                        android:id="@+id/tv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="false"
+                        android:text="좋아요"
+                        android:textColor="#00cad2"
+                        android:textSize="13.3dp" />
+
+                    <TextView
+                        android:id="@+id/txt_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="false"
+                        android:textColor="#00cad2"
+                        android:textSize="18.3dp"
+                        android:textStyle="bold"
+                        tools:text="134,703" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:layout_height="25.7dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="#b6b6b6" />
+
+                <!--싫어요-->
+                <LinearLayout
+                    android:id="@+id/cover_dislike"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_white_effect"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_dislike"
+                        android:layout_width="33.3dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/dislike" />
+
+                    <TextView
+                        android:id="@+id/tv_dislike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="false"
+                        android:text="싫어요"
+                        android:textColor="#fe6aa3"
+                        android:textSize="13.3dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dislike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="false"
+                        android:textColor="#fe6aa3"
+                        android:textSize="18.3dp"
+                        android:textStyle="bold"
+                        tools:text="198,304" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 프로필 이미지 -->
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="108.3dp"
+                android:layout_height="108.3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="97.3dp"
+                android:background="@drawable/photo_default" />
+
+            <!-- 하단 메뉴 -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="220dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginLeft="26.7dp"
+                        android:layout_marginRight="26.7dp"
+                        android:background="#b6b6b6" />
+
+                    <!-- 예약목록 -->
+                    <LinearLayout
+                        android:id="@+id/leftResvDateTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_white_effect"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="26.7dp"
+                        android:paddingTop="22.7dp"
+                        android:paddingRight="26.7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="31.7dp"
+                                android:layout_height="31.7dp"
+                                android:src="@drawable/left_resv" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9.3dp"
+                                android:text="배달목록"
+                                android:textColor="#222222"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="22.7dp"
+                            android:background="#b6b6b6" />
+
+                    </LinearLayout>
+
+                    <!-- 운행이력 -->
+                    <LinearLayout
+                        android:id="@+id/leftDriveHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_white_effect"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="26.7dp"
+                        android:paddingTop="22.7dp"
+                        android:paddingRight="26.7dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24.7dp"
+                                android:layout_height="25.3dp"
+                                android:layout_marginStart="3.5dp"
+                                android:layout_marginEnd="3.5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/left_drive_history" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9.3dp"
+                                android:text="운행이력"
+                                android:textColor="#222222"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="22.7dp"
+                            android:background="#b6b6b6" />
+
+                    </LinearLayout>
+
+                    <!-- 정산내역 -->
+                    <LinearLayout
+                        android:id="@+id/leftBalanceAccounts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_white_effect"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="26.7dp"
+                        android:paddingTop="22.7dp"
+                        android:paddingRight="26.7dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginEnd="3.5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/btn_statistics" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9.3dp"
+                                android:text="정산내역"
+                                android:textColor="#222222"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="22.7dp"
+                            android:background="#b6b6b6" />
+
+                    </LinearLayout>
+
+                    <!-- 차고지이동 -->
+                    <LinearLayout
+                        android:id="@+id/leftRetire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_white_effect"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="26.7dp"
+                        android:paddingTop="22.7dp"
+                        android:paddingRight="26.7dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="31.7dp"
+                                android:layout_height="31.7dp"
+                                android:src="@drawable/ico_garage2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="9.3dp"
+                                android:text="차고지이동"
+                                android:textColor="#222222"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="22.7dp"
+                            android:background="#b6b6b6" />
+                    </LinearLayout>
+
+                    <!-- 사고접수 -->
+                    <LinearLayout
+                        android:id="@+id/leftAccident"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_white_effect"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="26.7dp"
+                        android:paddingTop="22.7dp"
+                        android:paddingRight="26.7dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="31.7dp"
+                                android:layout_height="31.7dp"
+                                android:src="@drawable/emergecy" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="9.3dp"
+                                android:text="사고접수"
+                                android:textColor="#222222"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="22.7dp"
+                            android:background="#b6b6b6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <!-- 퇴근하기 -->
+        <LinearLayout
+            android:id="@+id/leftLogout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ripple_gray_effect"
+            android:gravity="center_vertical"
+            android:paddingLeft="26.7dp">
+
+            <ImageView
+                android:layout_width="31.7dp"
+                android:layout_height="31.7dp"
+                android:src="@drawable/left_logout" />
+
+            <TextView
+                android:id="@+id/leftTvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:text="퇴근하기"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

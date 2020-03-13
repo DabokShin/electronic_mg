@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fafafa">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/macaron_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="21dp"
+            android:textSize="17.5dp"
+            android:textColor="#656565"
+            android:letterSpacing="-0.01"
+            android:text="@string/phone_auth_summary"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <EditText
+            android:id="@+id/edittext_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:textColor="#222222"
+            android:textColorHint="#cccccc"
+            android:maxLength="13"
+            android:background="@drawable/bg_auth_box"
+            android:hint="@string/phone_auth_hint"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSummary"/>
+
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_clear"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/edittext_phone_number"
+            app:layout_constraintRight_toRightOf="@+id/edittext_phone_number"
+            app:layout_constraintBottom_toBottomOf="@+id/edittext_phone_number"/>
+
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:enabled="false"
+            android:background="@drawable/btn_bottom_new_selector"
+            android:text="@string/phone_auth_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/loadingBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:progressBackgroundTint="#02d1d9"
+                android:progressTint="#02d1d9"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>
